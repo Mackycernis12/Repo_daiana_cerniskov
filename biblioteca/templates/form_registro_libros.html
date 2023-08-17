@@ -1,0 +1,25 @@
+{%extends "padre.html" %}
+
+
+{%block contenido%}
+
+    <form action="alta_libros" method="POST">
+          <body>
+            <h1 style="margin: 10px; margin: 30 auto; color: #ffffff;">Alta de libros</h1>
+            
+          </body>
+          
+        {% csrf_token %}
+        <p style="margin: 10px;">Nombre</p>
+        <input type="text" name="nombre" required  style="margin: 10px">
+
+        <p style= "margin: 10px">Editorial</p> 
+        <input type="text" name="Editorial" required style="margin: 10px">
+
+        <p style= "margin: 10px">Año de publicación</p> 
+        <input type="text" name="año_publicacion" required style="margin: 10px">
+
+        <input type="submit" style="margin: 10px">
+    </form>
+
+{%endblock%}

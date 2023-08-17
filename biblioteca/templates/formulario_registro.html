@@ -1,0 +1,23 @@
+{%extends "padre.html" %}
+
+{%block contenido%}
+
+
+    <form action="alta_usuarios" method="POST">
+          <body>
+            <h1 style="margin: 10px; margin: 30 auto; color: #ffffff;">Registro de empleados</h1>
+            
+          </body>
+          
+        {% csrf_token %}
+        <p style="margin: 10px;">Usuario</p>
+        <input type="text" name="usuario" required  style="margin: 10px">
+
+        <p style= "margin: 10px">contraseña</p> 
+        <input type="number" name="clave" required style="margin: 10px">
+
+        <input type="submit" style="margin: 10px">
+    </form>
+
+{%endblock%}
+
